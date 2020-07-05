@@ -1,0 +1,439 @@
+/*Global CSS*/
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Header CSS */
+.header{}
+.header .navbar{}
+.header .navbar .navbar-nav{}
+.header .navbar .navbar-nav .nav-item{
+    position: relative;
+    margin: 0 5px;
+    padding: 0 8px;
+}
+.header .navbar .navbar-nav .nav-item .nav-link{
+    color: #000000;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link:after{
+    content: "";
+    height: 2px;
+    background: #e74c3c;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: -33%;
+    transition: 0.4s all;
+}
+
+.header .navbar .navbar-nav .nav-item.active .nav-link:after{
+    width: 100%;
+}
+.header .navbar .navbar-nav .nav-item:hover .nav-link:after{
+    width: 100%;
+}
+/* Carousel CSS */
+.carousel{}
+.carousel-inner{}
+.carousel-inner .carousel-item{}
+.carousel-inner .carousel-item .img-fluid{
+    height: 100vh !important;
+    object-fit: cover;
+}
+.carousel-inner .carousel-item .carousel-caption{}
+
+/* Overflow Box CSS */
+.overflow-box{
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+.overflow-box .icon-box{
+    background-color: #ffffff;
+    box-shadow: 0px 8px 18px rgba(68, 68, 68, 0.6) ;
+}
+.overflow-box .icon-box .inner-box{
+    padding: 32px !important;
+}
+.overflow-box .icon-box .inner-box.middle{
+    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.6);
+}
+.overflow-box .icon-box .inner-box.last{
+    box-shadow: 0px -3px 6px rgba(68, 68, 68, 0.6);
+}
+.overflow-box .icon-box .img-box{}
+.overflow-box .icon-box .img-box img{
+    width: 120%;
+}
+.overflow-box .icon-box .img-box .second{
+    margin-top: 10px;
+}
+.overflow-box .icon-box .text-box{}
+.overflow-box .icon-box .text-box h4{}
+.overflow-box .icon-box .text-box a{
+    color: #e74c3c;
+}
+.overflow-box .icon-box .text-box a:hover{
+    color: #9b1304;
+    text-decoration: none;
+}
+
+/* YouTube Section CSS */
+.youtube{
+    margin-bottom: 100px;
+}
+.youtube .img-box{}
+.youtube .img-box img{}
+.youtube .text-box{}
+.youtube .text-box.second{}
+.youtube .text-box h2{
+    color: #e74c3c;
+    margin-top: 30px;
+    margin-right: 20%;
+}
+.youtube .text-box p{
+    color: black;
+    margin-top: 20px;
+}
+    /*Video Box*/
+.youtube .img-box.second{
+    margin-top: 120px;
+    position: relative;
+}
+
+.youtube .img-box.second .video{
+    margin: 0 auto;
+    display: block;
+    height: 440px;
+    width: 1000px;
+    object-fit: cover;
+}
+
+.youtube .img-box.second .button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.youtube .img-box.second .color{
+    height: 240px;
+    width: 240px;
+    position: absolute;
+    top: -20px;
+    left: 3%;
+    background: #e74c3c;
+    z-index: -1;
+}
+
+.youtube .img-box.second span{
+    background-color: #e74c3c;
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    left: 80%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* Gets Started Section CSS */
+.get-started{
+    background-color: #e74c3c;
+    padding: 80px 0;
+    text-align: center;
+}
+.get-started .text-box{}
+
+.get-started .text-box h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 10%;
+    line-height: 1.5;
+}
+
+.get-started .text-box .btn-started{
+    background: #fff;
+    color: #e74c3c;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 0;
+    padding: 8px 50px;
+}
+
+/* Logo Section CSS */
+.logo{}
+
+.logo .text-box{
+    padding: 80px 0 60px 0;
+    color: #000000;
+    margin-right: 15%;
+}
+
+.logo .text-box p{}
+
+.logo .logo-search-icon{
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.logo .logo-search-icon img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-logo-box{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.logo .logo-box{}
+
+.logo .logo-box img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo-box.one{
+    margin-top: 30px;
+}
+
+.logo .logo-box.one .logo4{
+    float: right;
+}
+
+.logo .logo-box.one .logo6{
+    float: left;
+}
+
+.logo .row-logo-box.three{
+    margin-bottom: 120px;
+}
+
+.logo .media{
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 30px;
+}
+.logo .media .media-body{}
+.logo .media .media-body p{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.logo .media-box{
+    margin-bottom: 150px;
+}
+
+/* Gain Strength CSS */
+.strength{
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0 60px 0;
+}
+.strength .text-box{}
+.strength .text-box h2{
+    font-size: 48px;
+    font-weight: 450;
+    letter-spacing: 2px;
+}
+.strength .text-box h4{
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 18%;
+    margin-bottom: 50px;
+}
+
+.strength .button-box{
+    margin: 0 auto;
+    margin-top: 40px;
+    box-shadow: 0 5 2px 6px #af1c1c66;
+    box-shadow: 1px 1px 4px rgba(68, 68, 68, 0.6);
+    border-right: 1px solid #584d4d36;
+}
+
+.strength .button-box-main{}
+
+.strength .button-box .btn{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 480;
+    text-transform: uppercase;
+}
+
+.strength .button-box .btn:focus{
+    box-shadow: none;
+}
+.strength .button-box .btn:active{
+    background-color: #ff000000;
+    border-color: #005cbf00;
+    color: #000;
+}
+.strength .button-box .btn:active:focus{
+    box-shadow: none;
+}
+.strength .button-box:hover .btn{
+    color: #000;
+}
+.strength .collapse{}
+.strength .collapse .card{
+    background: #fff0;
+    border: none;
+}
+.strength .collapse .card.card-body{
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-top: 24px;
+}
+.strength .collapse .card p{
+    color: #fff;
+    text-align: left;
+    margin-right: 40%;
+}
+.strength .collapse .card .border-bottom{
+    border-bottom: 1px solid #dee2e666!important;
+}
+
+/* Rule One CSS */
+.rule-one{
+    margin: 80px 0 60px 0;
+}
+
+.rule-one .text-box{}
+
+.rule-one .text-box h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.rule-one .text-box h2 span{
+    color: #e74c3c;
+}
+
+.rule-one .text-box p{
+    color: #000;
+    padding-right: 8%;
+    line-height: 1.7;
+}
+
+/* Rule Two Section CSS */
+.rule-two{
+    background-color: #000000;
+    padding: 80px 0 60px 0;
+}
+
+.rule-two .text-box{}
+
+.rule-two .text-box h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.rule-two .text-box h2 span{
+    color: #e74c3c;
+}
+
+.rule-two .text-box p{
+    color: rgb(255, 255, 255);
+    padding-right: 8%;
+    line-height: 1.7;
+}
+
+/* Product Section CSS */
+.product{
+    background-color: #f5f5f5;
+    padding: 80px 0 60px 0;
+    text-align: center;
+    color: #000000;
+}
+
+.product .text-box{}
+.product .text-box h1{
+    text-transform: uppercase;
+    font-size: 68px;
+    font-weight: 450;
+    margin-bottom: 30px;
+}
+.product .text-box p{
+    padding: 0 12%;
+}
+
+/* Three Step Section CSS */
+.step{
+    text-align: center;
+    margin: 80px 0 60px 0;
+}
+.step .text-box{}
+.step .text-box h1{
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #000;
+    padding: 0 28%;
+    margin-bottom: 20px;
+}
+.step .text-box h1 span{
+    color: #e74c3c;
+}
+.step .text-box p{
+    padding: 0 32%;
+    margin-bottom: 80px;
+}
+.step .img-box{}
+.step .img-box img{
+    width: 70%;
+    margin-bottom: 30px;
+}
+.step .img-box h3{
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.step .img-box h3 span{
+    color: #e74c3c;
+}
+.step .img-box p{
+    padding: 0 8%;
+}
+
+/* Get in Shape Section CSS */
+.shape{
+    padding: 80px 0;
+    background-color: #e74c3c;
+    text-align: center;
+    color: #fff;
+}
+.shape .text-box{}
+.shape .text-box h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 68px;
+}
+.shape .text-box p{
+    word-spacing: 1px;
+    margin-bottom: 40px;
+}
+.shape .text-box .btn{
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Footer Section CSS */
+.footer{
+    margin: 40px 0 40px 0;
+}
+.footer .nav{}
+.footer .nav .nav-item{}
+.footer .nav .nav-item .nav-link{
+    color: #000;
+}
+.footer p{
+    margin: 0 auto;
+}
+.footer .nav .nav-item:hover .nav-link{
+    color: #e74c3c;
+}
